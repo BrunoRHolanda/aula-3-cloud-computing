@@ -37,8 +37,8 @@ jobs:
                       && git fetch --all \
                       && git reset --hard origin/main \
                       && git pull origin main \
-                      && source ~/.bashrc
-                      && nvm use 21.7.1
+                      && source ~/.bashrc \
+                      && nvm use 21.7.1 \
                       && npm ci \
                       && pm2 reload main.js
           '
